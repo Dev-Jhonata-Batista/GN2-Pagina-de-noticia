@@ -14,12 +14,89 @@
         <a href="podcarst.html"> Videos e Podcast |</a>
     </nav>
 
-    <h1>Portal de Notícias em destaques</h1>
+    <h1>Fique esperto!</h1>
     <img src="../img/logos/logo-home.png" width="200" height="200">
     <hr>
 </header>
 
 <body>
-    
+    <main>
+        <section>
+            <h2>Previsão do tempo</h2>
+
+            <p>
+                <label for="umidade">Umidade do ar:</label>
+                <meter id="umidade" value="69" min="0" max="100" low="40" high="70" optimum="55">25%</meter>
+                69%
+            </p>
+
+                <p>
+                <label for="Precipitação">Precipitação:</label>
+                <meter id="Precipitação" value="35" min="0" max="100" low="40" high="70" optimum="55">25%</meter>
+                35%
+            </p>
+
+                <p>
+                <label for="Chance de chuva">Chance de chuva:</label>
+                <meter id="Chance de chuva" value="69" min="0" max="100" low="40" high="70" optimum="55">25%</meter>
+                86%
+            </p>
+
+            <p>Dia de chuva: que tal um treino em casa, como yoga ou alongamento?</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Deixe seu feedback</h2>
+            <p>Sua opinião ajuda a melhorar o site.</p>
+
+            <form action="#" method="post">
+
+                <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Ex.: Ana Silva" required>
+                </p>
+
+                <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Ex.: ana@email.com" required>
+                </p>
+
+                <p>
+                <label for="pagina">Sobre qual página é o feedback?</label><br>
+                <input type="text" id="pagina" name="pagina" list="lista-paginas" placeholder="Digite ou escolha uma página" required>
+                <datalist id="lista-paginas">
+                    <option value="Página inicial">
+                    <option value="Notícias">
+                    <option value="Modalidades e tempo">
+                    <option value="Contato">
+                    <option value="Site todo">
+                </datalist>
+                </p>
+
+                <p>
+                <label for="data">Data da visita:</label><br>
+                <input type="date" id="data" name="data">
+                </p>
+
+                <p>
+                <label for="nota">Nota para o site (0 = muito ruim, 10 = excelente):</label><br>
+                <input type="range" id="nota" name="nota" min="0" max="10" value="5">
+                </p>
+
+                <p>
+                <label for="comentario">Comentário:</label><br>
+                <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Conte o que você gostou ou o que podemos melhorar" required></textarea>
+                </p>
+
+                <p>
+                <label for="print">Anexar print da tela (opcional):</label><br>
+                <input type="file" id="print" name="print" accept="image/*">
+                </p>
+
+                <button type="submit">Enviar feedback</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
